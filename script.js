@@ -33,3 +33,15 @@ skip = () => {
 handleRangeUpdate = () => {
     video[this.name] = this.value;
 }
+
+handleProgress = () => {
+    const percent = (video.currentTime / video.duration) * 100;
+    progressBar.style.flexBasis = `${percent}%`;
+}
+
+scrub = e => {
+    const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
+    video.currentTime = scrubTime;
+}
+
+/*Add event listeners to video*/
