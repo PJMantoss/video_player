@@ -25,3 +25,11 @@ updateBtn = () => {
     console.log(icon);
     toggle.textContent = icon
 }
+
+skip = () => {
+    video.currentTime += parseFloat(this.dataset.skip);
+}
+
+handleRangeUpdate = () => {
+    video[this.name] = this.value;
+}
