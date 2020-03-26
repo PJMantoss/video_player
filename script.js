@@ -5,13 +5,13 @@ const video = player.querySelector('.viewer');
 
 const progress = player.querySelector('.progress');
 
-const progressBar = player.querySelector('.progress-filled');
+const progressBar = player.querySelector('.progress__filled');
 
 const toggle = player.querySelector('.toogle');
 
 const skipBtns = player.querySelectorAll('[data-skip]');
 
-const ranges = player.querySelectorAll('.player-slider');
+const ranges = player.querySelectorAll('.player__slider');
 
 /*Construct Functions*/
 
@@ -23,7 +23,7 @@ togglePlay = () => {
 updateBtn = () => {
     const icon = this.paused ? '►' : '❚ ❚';
     console.log(icon);
-    toggle.textContent = icon
+    toggle.textContent = icon;
 }
 
 skip = () => {
