@@ -16,3 +16,18 @@ body {
     background-size: cover;
     min-height: 100vh;
 }
+
+.player {
+    position: relative;
+    max-width: 750px;
+    border: 5px solid rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.player__video {
+    width: 100%;
+  }
+
+  .player__button {
+    border: 0;
+  }
