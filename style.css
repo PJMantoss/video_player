@@ -30,4 +30,11 @@ body {
 
   .player__button {
     border: 0;
+    line-height: 1;
+    background: transparent;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    max-width: 50px;
+    outline: 0;
   }
