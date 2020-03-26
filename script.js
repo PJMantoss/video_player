@@ -44,4 +44,9 @@ scrub = e => {
     video.currentTime = scrubTime;
 }
 
-/*Add event listeners to video*/
+/*Link up the event listeners to video*/
+
+video.addEventListener('click', togglePlay);
+video.addEventListener('play',updateBtn);
+video.addEventListener('click',);
+video.addEventListener('click',);
