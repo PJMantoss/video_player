@@ -47,6 +47,11 @@ scrub = e => {
 /*Link up the event listeners to video*/
 
 video.addEventListener('click', togglePlay);
-video.addEventListener('play',updateBtn);
-video.addEventListener('click',);
-video.addEventListener('click',);
+video.addEventListener('play', updateBtn);
+video.addEventListener('pause', updateBtn);
+video.addEventListener('timeupdate', handleProgress);
+
+toggle.addEventListener('click', togglePlay);
+skipBtns.forEach(button => button.addEventListener('click', skip));
+ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
+ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate))
